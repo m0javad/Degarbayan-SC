@@ -17,20 +17,6 @@ You can find the dataset under this link of [Google Drive](https://drive.google.
 - Dataset is in .csv format
 - our dataset has 2 columns that the first column is for source sentences and the second one is for targets.
 
-Alternatively, you can also access the data through the HuggingFace🤗 datasets library.
-For that, you need to install datasets using this command in your terminal:
-(We will share it on HuggingFace after our paper is published)
-```sh
-pip install -q datasets
-```
-
-Afterwards, import `persian_qa` dataset using `load_dataset`:
-
-```python
-from datasets import load_dataset
-dataset = load_dataset("m0javad/Degarbayan-SC")
-```
-
 ### Statistic
 ![Lenght of sentences](https://i.ibb.co/C1RJhTZ/lenght.jpg")
 
