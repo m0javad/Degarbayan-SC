@@ -31,19 +31,19 @@ from datasets import load_dataset
 dataset = load_dataset("m0javad/Degarbayan-SC-dataset")
 ```
 you can also access the Model through the Transformers library.
-For that, you need to install transformer using this command in your terminal:
+For that, you need to install `transformers` using this command in your terminal:
 
 ```sh
 pip install -q transformers
 ```
-or you can **fine-tune** the model using 'transformers': 
+or you can **fine-tune** the model using `transformers`: 
 ```python
 # Load model directly
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 tokenizer = AutoTokenizer.from_pretrained("m0javad/Degarbayan-SC")
 model = AutoModelForSequenceClassification.from_pretrained("m0javad/Degarbayan-SC")
 ```
-or you can **test** the fine-tuned model using 'pipeline': 
+or you can **test** the fine-tuned model using `pipeline`: 
 ```python
 from transformers import pipeline
 pipe = pipeline("text2text-generation", model="m0javad/Degarbayan-SC")
