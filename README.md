@@ -19,7 +19,7 @@ You can find the dataset under this link of [Google Drive](https://drive.google.
 
 Alternatively, you can also access the data through the HuggingFace🤗 datasets library.
 For that, you need to install datasets using this command in your terminal:
-(We will share it on HuggingFace after our paper is published)
+
 ```sh
 pip install -q datasets
 ```
@@ -29,6 +29,12 @@ Afterward, import the `Degarbayan-SC` dataset using `load_dataset`:
 ```python
 from datasets import load_dataset
 dataset = load_dataset("m0javad/Degarbayan-SC-dataset")
+```
+you can also access the Model through the Transformers library.
+For that, you need to install transformer using this command in your terminal:
+
+```sh
+pip install -q transformers
 ```
 or you can **fine-tune** the model using 'transformers': 
 ```python
